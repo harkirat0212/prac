@@ -1,44 +1,44 @@
 import streamlit as st 
 st.set_page_config(page_title='Form')
 
-# # # form 
-# with st.form(key='myform'):
-#     st.write("Registration Form")
-#     # col1,col2,col3= st.columns([1,2,1])
-#     col1,col2= st.columns(2)
-#     with col1:
-#         name= st.text_input("First Name")
-#         email= st.text_input("Email")
+# # form 
+with st.form(key='myform'):
+    st.write("Registration Form")
+    # col1,col2,col3= st.columns([1,2,1])
+    col1,col2= st.columns(2)
+    with col1:
+        name= st.text_input("First Name")
+        email= st.text_input("Email")
         
-#     with col2:
-#         name2= st.text_input("Last Name")
-#         password= st.text_input("Password", type='password')
+    with col2:
+        name2= st.text_input("Last Name")
+        password= st.text_input("Password", type='password')
         
-#     # with col3:
-#     #     name3= st.text_input("Confirm Password", type='password')
+    # with col3:
+    #     name3= st.text_input("Confirm Password", type='password')
     
-#     address= st.text_area("Address")
+    address= st.text_area("Address")
     
-# #     # col1,col2,col3= st.columns([1,3,1])
-#     col1,col2= st.columns([1,2])
+#     # col1,col2,col3= st.columns([1,3,1])
+    col1,col2= st.columns([1,2])
     
-#     with col1:
-#         dob= st.date_input("Date of Birth")
-#         cond= st.checkbox("Agree Terms and conditions")
-#         st.selectbox("State",options=['Punjab','HP','UK','UP','MP'])
-#     with col2:
-#         gender=st.radio("Gender", options=['Male','Female','Others'], horizontal=True)
-#         st.text_input("Pincode")
-#         st.multiselect("Interest",options=['Movies','Cricket','Web Series','Games','Reading Books'])
-#     st.slider("Age",min_value=5,max_value=70)
-#     st.time_input("Time")
-#     btn= st.form_submit_button("Submit", type='secondary')
+    with col1:
+        dob= st.date_input("Date of Birth")
+        cond= st.checkbox("Agree Terms and conditions")
+        st.selectbox("State",options=['Punjab','HP','UK','UP','MP'])
+    with col2:
+        gender=st.radio("Gender", options=['Male','Female','Others'], horizontal=True)
+        st.text_input("Pincode")
+        st.multiselect("Interest",options=['Movies','Cricket','Web Series','Games','Reading Books'])
+    st.slider("Age",min_value=5,max_value=70)
+    st.time_input("Time")
+    btn= st.form_submit_button("Submit", type='secondary')
     
-# if btn:
-#     if name=="" or email=="" or password=="" or address=="" or dob=="" or gender=="":
-#         st.warning("Please fill all the fields")
-#         st.success("Please fill all the fields")
-#         st.error("Please fill all the fields")
+if btn:
+    if name=="" or email=="" or password=="" or address=="" or dob=="" or gender=="":
+        st.warning("Please fill all the fields")
+        st.success("Please fill all the fields")
+        st.error("Please fill all the fields")
 
 ###with side bar
 
