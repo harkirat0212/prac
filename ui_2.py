@@ -7,7 +7,7 @@ with st.form(key='myform'):
     # col1,col2,col3= st.columns([1,2,1])
     col1,col2= st.columns(2)
     with col1:
-        name= st.text_input("First Name")
+        # name= st.text_input("First Name")
         email= st.text_input("Email")
         
     with col2:
